@@ -1,4 +1,4 @@
-/* Base styling for overall consistency */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,15 +8,13 @@ body {
     color: #333;
 }
 
-/* Ensures that all images and text are easily viewable */
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centers images */
+    margin: 0 auto;
 }
 
-/* Heading styles for clear hierarchy */
 h1, h2, h3 {
     margin-bottom: 0.75rem;
 }
@@ -36,12 +34,10 @@ h3 {
     color: #555;
 }
 
-/* Paragraph styling for readability */
 p {
     margin-bottom: 1rem;
 }
 
-/* List styling for clarity and structure */
 ul, ol {
     margin-bottom: 1rem;
 }
@@ -50,7 +46,6 @@ li {
     margin-bottom: 0.5rem;
 }
 
-/* Enhances link visibility and accessibility */
 a {
     color: #007bff;
     text-decoration: none;
@@ -60,7 +55,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Section styling for logical grouping and visual separation */
 section {
     background: #fff;
     padding: 20px;
@@ -69,7 +63,6 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Table styling for readability */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -89,14 +82,75 @@ th {
     background-color: #eee;
 }
 
-/* Ensures accessibility for visually impaired users */
+.headshot {
+    justify-content: space-between;
+    width: 10%;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+input[type="submit"],
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 10px;
+        box-shadow: none;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     img, a {
         transition: none;
     }
 }
 
-/* Improves readability for users with dyslexia */
 @media screen and (prefers-contrast: high) {
     body {
         font-weight: bold;
